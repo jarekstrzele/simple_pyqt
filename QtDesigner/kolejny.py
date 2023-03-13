@@ -5,7 +5,7 @@ from ui_modules.gbx_multi import *
 class DlgMain(QDialog):
     def __init__(self):
         super().__init__()
-        self.
+        
 
 if __name__ == "__main__":
     import sys
