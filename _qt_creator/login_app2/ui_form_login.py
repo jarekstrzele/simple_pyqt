@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'form.ui'
+## Form generated from reading UI file 'form_login.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.2
 ##
@@ -19,15 +19,18 @@ from PySide6.QtWidgets import (QApplication, QDialog, QHBoxLayout, QLabel,
     QLineEdit, QPushButton, QSizePolicy, QVBoxLayout,
     QWidget)
 
-class Ui_Dialog(object):
+class Ui_Login(object):
     def setupUi(self, Dialog):
         if not Dialog.objectName():
             Dialog.setObjectName(u"Dialog")
-        Dialog.resize(424, 624)
-        Dialog.setStyleSheet(u"background-color: rgb(68, 68, 68);")
+        Dialog.resize(500, 600)
+        Dialog.setMinimumSize(QSize(500, 600))
+        Dialog.setMaximumSize(QSize(500, 600))
+        Dialog.setStyleSheet(u"background-color: rgb(57, 57, 85)")
+        Dialog.setSizeGripEnabled(True)
         self.label = QLabel(Dialog)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(110, 40, 221, 61))
+        self.label.setGeometry(QRect(140, 30, 221, 61))
         font = QFont()
         font.setFamilies([u"Ravie"])
         self.label.setFont(font)
@@ -35,15 +38,24 @@ class Ui_Dialog(object):
 "color: rgb(255, 85, 255);")
         self.btn_login = QPushButton(Dialog)
         self.btn_login.setObjectName(u"btn_login")
-        self.btn_login.setGeometry(QRect(270, 420, 131, 61))
+        self.btn_login.setGeometry(QRect(330, 420, 131, 61))
         self.btn_login.setFont(font)
-        self.btn_login.setStyleSheet(u"font-size: 20px;\n"
-"border-radius: 10px;\n"
-"background-color:rgb(0, 0, 0) ;\n"
-"color: white;")
+        self.btn_login.setStyleSheet(u"QPushButton{\n"
+"	font-size: 20px;\n"
+"	border-radius: 10px;\n"
+"	background-color: rgb(66, 0, 99);\n"
+"	color: white;\n"
+"	padding: 10px;\n"
+"	\n"
+"}\n"
+"\n"
+"\n"
+"QPushButton:pressed {\n"
+"	background-color: rgb(34, 177, 32);\n"
+"}")
         self.verticalLayoutWidget = QWidget(Dialog)
         self.verticalLayoutWidget.setObjectName(u"verticalLayoutWidget")
-        self.verticalLayoutWidget.setGeometry(QRect(10, 130, 401, 241))
+        self.verticalLayoutWidget.setGeometry(QRect(10, 130, 481, 241))
         self.verticalLayout = QVBoxLayout(self.verticalLayoutWidget)
         self.verticalLayout.setSpacing(10)
         self.verticalLayout.setObjectName(u"verticalLayout")
@@ -89,6 +101,29 @@ class Ui_Dialog(object):
 
         self.verticalLayout.setStretch(0, 5)
         self.verticalLayout.setStretch(1, 5)
+        self.label_4 = QLabel(Dialog)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setGeometry(QRect(30, 480, 171, 21))
+        font1 = QFont()
+        font1.setPointSize(11)
+        self.label_4.setFont(font1)
+        self.btn_create_account = QPushButton(Dialog)
+        self.btn_create_account.setObjectName(u"btn_create_account")
+        self.btn_create_account.setGeometry(QRect(30, 510, 191, 41))
+        self.btn_create_account.setFont(font)
+        self.btn_create_account.setStyleSheet(u"QPushButton{\n"
+"	font-size: 15px;\n"
+"	border-radius: 10px;\n"
+"	background-color: rgb(23, 125, 136);\n"
+"	color: white;\n"
+"	padding: 10px;\n"
+"\n"
+"}\n"
+"\n"
+"\n"
+"QPushButton:pressed {\n"
+"	background-color: rgb(34, 177, 32);\n"
+"}")
 
         self.retranslateUi(Dialog)
 
@@ -96,12 +131,14 @@ class Ui_Dialog(object):
     # setupUi
 
     def retranslateUi(self, Dialog):
-        Dialog.setWindowTitle(QCoreApplication.translate("Dialog", u"Dialog", None))
+        Dialog.setWindowTitle(QCoreApplication.translate("Dialog", u"Login", None))
         self.label.setText(QCoreApplication.translate("Dialog", u"L o g i n", None))
         self.btn_login.setText(QCoreApplication.translate("Dialog", u"Login", None))
         self.label_2.setText(QCoreApplication.translate("Dialog", u"Email", None))
         self.led_email.setText("")
         self.label_3.setText(QCoreApplication.translate("Dialog", u"Password", None))
         self.led_password.setText("")
+        self.label_4.setText(QCoreApplication.translate("Dialog", u"Don't have an accouint?", None))
+        self.btn_create_account.setText(QCoreApplication.translate("Dialog", u"Create Account", None))
     # retranslateUi
 
